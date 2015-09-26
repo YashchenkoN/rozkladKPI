@@ -29,7 +29,7 @@ public class ConnectionFactoryService {
         try {
             URL url = new URL(ConnectionURL.GROUPS.toString());
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setRequestMethod("POST");
+            httpURLConnection.setRequestMethod("GET");
             String urlParameters = ConnectionURL.FILTER.toString() + json;
             httpURLConnection.setDoOutput(true);
             DataOutputStream dataOutputStream = new DataOutputStream(httpURLConnection.getOutputStream());
