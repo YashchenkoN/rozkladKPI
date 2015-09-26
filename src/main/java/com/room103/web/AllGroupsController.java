@@ -52,6 +52,7 @@ public class AllGroupsController {
             allGroupsRequest.setOffset(offsetInt);
         } catch (Exception e) {
             e.printStackTrace();
+            return new ModelAndView("redirect:/");
         }
         AllGroupsResponse allGroupsResponse = sendRequestService.sendAllGroupRequest(allGroupsRequest);
         mav.addObject("groupsResponse", allGroupsResponse);
