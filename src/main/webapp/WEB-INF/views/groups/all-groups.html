@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All groups</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header">Header</div>
+<div class="container">
+    <div th:if="${groupsResponse != null and groupsResponse.data != null}">
+        <table>
+            <tr th:each="group : ${groupsResponse.data}">
+                <td th:text="${group.group_id}"></td>
+                <td th:text="${group.group_full_name}"></td>
+                <td th:text="${group.group_prefix}"></td>
+                <td th:text="${group.group_okr}"></td>
+                <td th:text="${group.group_type}"></td>
+                <td><a th:href="${group.group_url}">URL</a></td>
+            </tr>
+        </table>
+    </div>
+    <div th:replace="fragments/footer :: footer">&copy; 2013 The Static Templates</div>
+</div>
+</body>
+</html>

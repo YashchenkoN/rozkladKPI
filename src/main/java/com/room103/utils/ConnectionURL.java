@@ -6,7 +6,7 @@ package com.room103.utils;
 public enum ConnectionURL {
 
     GROUPS("http://api.rozklad.org.ua/v2/groups/"),
-    GROUPS_WITH_FILTERS("http://api.rozklad.org.ua/v2/groups/?filter=");
+    FILTER("?filter=");
 
     private String value;
 

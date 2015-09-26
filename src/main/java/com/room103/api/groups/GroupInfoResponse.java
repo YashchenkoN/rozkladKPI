@@ -1,10 +1,18 @@
 package com.room103.api.groups;
 
 import com.room103.api.BaseResponse;
+import sun.text.resources.cldr.en.FormatData_en_IE;
+
+import javax.swing.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Created by kolyan on 9/26/15.
  */
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class GroupInfoResponse extends BaseResponse {
 
     private int group_id;
