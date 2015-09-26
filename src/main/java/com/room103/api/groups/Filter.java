@@ -20,41 +20,50 @@ public class Filter extends BaseRequest {
     private String lesson_type;
     private double rate;
 
-    public int getDayNumber() {
+    public int getDay_number() {
         return day_number;
     }
-    public String getDayName() {
+
+    public void setDay_number(int day_number) {
+        this.day_number = day_number;
+    }
+
+    public String getDay_name() {
         return day_name;
     }
-    public int getLessonNumber() {
+
+    public void setDay_name(String day_name) {
+        this.day_name = day_name;
+    }
+
+    public int getLesson_number() {
         return lesson_number;
     }
-    public int getLessonWeek() {
+
+    public void setLesson_number(int lesson_number) {
+        this.lesson_number = lesson_number;
+    }
+
+    public int getLesson_week() {
         return lesson_week;
     }
-    public String getLessonType() {
+
+    public void setLesson_week(int lesson_week) {
+        this.lesson_week = lesson_week;
+    }
+
+    public String getLesson_type() {
         return lesson_type;
     }
+
+    public void setLesson_type(String lesson_type) {
+        this.lesson_type = lesson_type;
+    }
+
     public double getRate() {
         return rate;
     }
 
-
-    public void setDayNumber(int day_number) {
-        this.day_number = day_number;
-    }
-    public void setDayName(String day_name) {
-        this.day_name = day_name;
-    }
-    public void setLessonNumber(int lesson_number) {
-        this.lesson_number = lesson_number;
-    }
-    public void settLessonWeek(int lesson_week) {
-        this.lesson_week = lesson_week;
-    }
-    public void setLessonType(String lesson_type) {
-        this.lesson_type = lesson_type;
-    }
     public void setRate(double rate) {
         this.rate = rate;
     }

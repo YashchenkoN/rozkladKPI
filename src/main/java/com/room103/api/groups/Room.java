@@ -9,15 +9,35 @@ public class Room {
     private double room_latitude;
     private double room_longitude;
 
-    public int getRoomId() { return room_id; }
-    public void setRoomId(int room_id) { this.room_id = room_id; }
+    public int getRoom_id() {
+        return room_id;
+    }
 
-    public String getRoomName() { return room_name; }
-    public void setRoomName(String room_name) { this.room_name = room_name; }
+    public void setRoom_id(int room_id) {
+        this.room_id = room_id;
+    }
 
-    public double getRoomLatitude() { return room_latitude; }
-    public void setRoomLatitude(double room_latitude) { this.room_latitude = room_latitude; }
+    public String getRoom_name() {
+        return room_name;
+    }
 
-    public double getRoomLongtitude() { return room_longitude; }
-    public void setRoomLongitude(double room_longitude) { this.room_longitude= room_longitude; }
+    public void setRoom_name(String room_name) {
+        this.room_name = room_name;
+    }
+
+    public double getRoom_latitude() {
+        return room_latitude;
+    }
+
+    public void setRoom_latitude(double room_latitude) {
+        this.room_latitude = room_latitude;
+    }
+
+    public double getRoom_longitude() {
+        return room_longitude;
+    }
+
+    public void setRoom_longitude(double room_longitude) {
+        this.room_longitude = room_longitude;
+    }
 }
